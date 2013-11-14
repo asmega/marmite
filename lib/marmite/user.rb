@@ -7,7 +7,17 @@ module Marmite
     end
 
     def email
-      @user.email
+      user.email
+    end
+
+    def repos
+      @repos ||= user.rels[:repos].get.data
+    end
+
+    private
+
+    def user
+      @user
     end
   end
 end
