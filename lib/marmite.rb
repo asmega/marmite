@@ -1,5 +1,5 @@
 require "marmite/version"
+require 'marmite/user'
 
 module Marmite
-  # Your code goes here...
 end
