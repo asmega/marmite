@@ -4,5 +4,3 @@ require 'marmite/cli'
 
 module Marmite
 end
-
-Marmite::Cli.run!
