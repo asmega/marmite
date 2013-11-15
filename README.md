@@ -1,10 +1,8 @@
 # Marmite
 
-TODO: Write a gem description
+Find out a Github user's favourite programming language
 
 ## Installation
-
-Add this line to your application's Gemfile:
 
     gem 'marmite'
 
@@ -18,7 +16,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+bundle exec ruby -I lib lib/marmite.rb
+
+## TODO
+
+* Hard codes to the command line interface. Should support multiple frontends.
+* Make a binary to call the command line tool easily
 
 ## Contributing
 
