@@ -2,10 +2,14 @@ require 'octokit'
 
 module Marmite
   class User
+    class NotFound < Exception; end
+
     def initialize(username)
       client = Octokit::Client.new :access_token => "token"
 
       @user = client.user username
+    rescue Octokit::NotFound
+      raise NotFound
     end
 
     def email

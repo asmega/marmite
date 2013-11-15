@@ -7,6 +7,12 @@ describe Marmite::User do
     subject.email.should == "asmega@ph-lee.com"
   end
 
+  context 'when an unknown user' do
+    it "raises User::NotFound exception" do
+      expect{ described_class.new("ihopethisuserdoenotexist") }.to raise_error(Marmite::User::NotFound)
+    end
+  end
+
   describe :repos do
     it 'returns some repos' do
       subject.repos.should_not be_empty
