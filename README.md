@@ -16,12 +16,9 @@ Or install it yourself as:
 
 ## Usage
 
-bundle exec ruby -I lib lib/marmite.rb
+On the command line run `marmite`
 
 ## TODO
-
-* Hard codes to the command line interface. Should support multiple frontends.
-* Make a binary to call the command line tool easily
 
 ## Contributing
 
