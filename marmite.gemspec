@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Marmite::VERSION
   spec.authors       = ["Phil Lee"]
   spec.email         = ["asmega@ph-lee.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "A command line tool to find out a GitHub user's favourite language"
+  spec.summary       = "A command line tool to find out a GitHub user's favourite language"
   spec.homepage      = ""
   spec.license       = "MIT"
 
