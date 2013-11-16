@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Marmite::User do
+describe Marmite::User, :vcr do
   subject{ described_class.new("asmega") }
 
   it 'fetches the users email' do

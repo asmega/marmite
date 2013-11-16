@@ -5,9 +5,7 @@ module Marmite
     class NotFound < Exception; end
 
     def initialize(username)
-      client = Octokit::Client.new :access_token => "token"
-
-      @user = client.user username
+      @user = ::Octokit.user username
     rescue Octokit::NotFound
       raise NotFound
     end
