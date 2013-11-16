@@ -18,6 +18,8 @@ Or install it yourself as:
 
 On the command line run `marmite`
 
+NOTE: If you're using rbenv remember to call `rbenv rehash` otherwise the binary won't be available
+
 ## TODO
 
 ## Contributing
